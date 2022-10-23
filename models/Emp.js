@@ -4,19 +4,23 @@ const mongoose = require("mongoose")
 const empSchema = new mongoose.Schema({
     first_name: {
         type: String,
-        require: true
+        require: true,
+        maxLength: 100
     },
     last_name: {
         type: String,
-        require: true
+        require: true,
+        maxLength: 50
     },
     email: {
         type: String,
-        unique: true
+        unique: true,
+        maxLength: 50
     },
     gender:{
         type: String,
         enum: ['Male', 'Female', 'Other'],
+        maxLength: 25
     },
     salary: {
         type: Number,
