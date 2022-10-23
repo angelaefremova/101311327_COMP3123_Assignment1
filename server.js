@@ -5,7 +5,7 @@ const app = express()
 const mongoose = require("mongoose")
 
 
-const SERVER_PORT = 8001
+const SERVER_PORT = 8000
 
 const DB_CONNECTION_STRING = "mongodb+srv://101311327-Angela:school@cluster0.sjruygg.mongodb.net/comp3123_assigment1?retryWrites=true&w=majority"
 mongoose.connect(DB_CONNECTION_STRING, {
